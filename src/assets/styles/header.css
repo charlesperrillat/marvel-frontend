@@ -1,0 +1,31 @@
+header {
+  background-color: #ed1c24;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header-nav img {
+  width: 100px;
+}
