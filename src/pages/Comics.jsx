@@ -27,9 +27,7 @@ const Comics = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `${
-            import.meta.env.VITE_API_URL
-          }comics?limit=${limit}&skip=${skip}&title=${title}`
+          `https://site--marvel-backend--2fb822fyxqpz.code.run/comics?limit=${limit}&skip=${skip}&title=${title}`
         );
         // console.log(response.data);
         setData(response.data);

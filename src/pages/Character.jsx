@@ -12,7 +12,7 @@ const Character = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}character/${params.id}`
+          `https://site--marvel-backend--2fb822fyxqpz.code.run/character/${params.id}`
         );
         console.log(response.data);
         setData(response.data);

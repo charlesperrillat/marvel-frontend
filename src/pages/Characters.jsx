@@ -29,9 +29,7 @@ const Characters = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `${
-            import.meta.env.VITE_API_URL
-          }characters?limit=${limit}&skip=${skip}&name=${name}`
+          `https://site--marvel-backend--2fb822fyxqpz.code.run/characters?limit=${limit}&skip=${skip}&name=${name}`
         );
         // console.log(response.data);
         setData(response.data);
